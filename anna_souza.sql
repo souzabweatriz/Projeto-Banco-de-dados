@@ -13,3 +13,24 @@ CREATE TABLE cadastro_estudantes (
 );
 
 SELECT * FROM cadastro_estudantes;
+
+INSERT INTO cadastro_estudantes (nome, email, senha)
+VALUES
+('Ana Beatriz de Souza de Oliveira', 'ana.b.oliveira56@aluno.senai.br', 'souza@123'),
+('Anna Beatriz Leme Alves', 'anna.b.alves7@aluno.senai.br', 'leme@123'),
+('Carlos Eduardo Augusto Ferraz', 'carlos.e.augusto@aluno.senai.br', 'ferraz@123'),
+('Caio Gabriel Lacerda Silva', 'caio.g.silva20@aluno.senai.br', 'silva@123'),
+('Kevin Eziquiel Lima', 'kevin.e.lima@aluno.senai.br', 'lima@123');
+
+SELECT * FROM cadastro_estudantes;
+
+/*Criação da tabela de Notícias*/
+
+CREATE TABLE noticias (
+    id_noticia SERIAL PRIMARY KEY,
+    titulo VARCHAR(100) NOT NULL,
+    corpo_texto TEXT NOT NULL,
+    img
+    id_videoaula INT,
+    FOREIGN KEY (id_videoaula) REFERENCES
+)
