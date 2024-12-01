@@ -23,14 +23,3 @@ VALUES
 ('Kevin Eziquiel Lima', 'kevin.e.lima@aluno.senai.br', 'lima@123');
 
 SELECT * FROM cadastro_estudantes;
-
-/*Criação da tabela de Notícias*/
-
-CREATE TABLE noticias (
-    id_noticia SERIAL PRIMARY KEY,
-    titulo VARCHAR(100) NOT NULL,
-    corpo_texto TEXT NOT NULL,
-    img
-    id_videoaula INT,
-    FOREIGN KEY (id_videoaula) REFERENCES
-)
