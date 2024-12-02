@@ -1,7 +1,8 @@
 CREATE TABLE simulados {
 id_simulado SERIAL PRIMARY KEY,
 titulo_simulado VARCHAR(250) NOT NULL,
-descricao TEXT
+descricao TEXT,
+FOREIGN KEY (id_estudante) REFERENCES estudantes(id_estudante)
 };
 
 INSERT INTO simulados (titulo_simulado, descricao) VALUES 
