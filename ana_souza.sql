@@ -24,4 +24,3 @@ VALUES
 
 SELECT * FROM cadastro_estudantes;
 
-
