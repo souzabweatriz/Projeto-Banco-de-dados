@@ -1,12 +1,12 @@
 -- Cria a tabela "perguntas_simulado" que armazenará as perguntas de cada simulado
 CREATE TABLE perguntas_simulado (
     id_pergunta SERIAL PRIMARY KEY,
-    simulado_id INT NOT NULL,
+    id_simulado INT,
     pergunta TEXT NOT NULL,
-    CONSTRAINT fk_simulado FOREIGN KEY (simulado_id) REFERENCES simulados(id) ON DELETE CASCADE
+    FOREIGN KEY (id_simulado) REFERENCES simulados(id_simulado) ON DELETE CASCADE
 );
 
-INSERT INTO perguntas_simulado (simulado_id, pergunta) VALUES 
+INSERT INTO perguntas_simulado (id_simulado, pergunta) VALUES 
 (1, 'O que é uma onda longitudinal?'),
 (1, 'Qual a unidade de medida da frequência de uma onda?'),
 (1, '(Enem 2017) A epilação a laser consiste na aplicação de uma fonte de luz para aquecer e causar uma lesão localizada e controlada nos folículos capilares. Qual é o comprimento de onda, em nm, ideal para a epilação a laser?'),
