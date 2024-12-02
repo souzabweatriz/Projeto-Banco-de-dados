@@ -1,7 +1,7 @@
 /*Criação do Banco*/
 
 CREATE DATABASE sitefisica;
-/c sitefisica;
+\c sitefisica
 
 /*Criação da tabela de Cadastro dos estudantes*/
 
