@@ -1,6 +1,6 @@
 -- Cria a tabela "perguntas_simulado" que armazenará as perguntas de cada simulado
 CREATE TABLE perguntas_simulado (
-    id SERIAL PRIMARY KEY,
+    id_pergunta SERIAL PRIMARY KEY,
     simulado_id INT NOT NULL,
     pergunta TEXT NOT NULL,
     CONSTRAINT fk_simulado FOREIGN KEY (simulado_id) REFERENCES simulados(id) ON DELETE CASCADE
