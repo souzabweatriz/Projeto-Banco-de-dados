@@ -23,3 +23,4 @@ VALUES
 ('Kevin Eziquiel Lima', 'kevin.e.lima@aluno.senai.br', 'lima@123');
 
 SELECT * FROM cadastro_estudantes;
+
