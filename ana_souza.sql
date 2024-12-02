@@ -1,7 +1,7 @@
 /*Criação do Banco*/
 
 CREATE DATABASE sitefisica;
-/c sitefisica;
+\c sitefisica
 
 /*Criação da tabela de Cadastro dos estudantes*/
 
@@ -23,3 +23,5 @@ VALUES
 ('Kevin Eziquiel Lima', 'kevin.e.lima@aluno.senai.br', 'lima@123');
 
 SELECT * FROM cadastro_estudantes;
+
+
