@@ -5,12 +5,12 @@ url VARCHAR(255) NOT NULL,
 duracao TIME
 )
 
-INSERT INTO video_aulas (titulo, url, duracao) VALUES ('Velocidade Média', 'https://youtu.be/wlTa_yTElGM?feature=shared', 00:10:45');
-INSERT INTO video_aulas (titulo, url, duracao) VALUES ('Física Basica- Começando do Zero', 'https://youtu.be/G9Uk-eV6ctQ?feature=shared', 00:11:13');
-INSERT INTO video_aulas (titulo, url, duracao) VALUES ('Como entender fisica', 'https://www.youtube.com/live/MHhIOaBesa4?feature=shared', 00:58:29');
-INSERT INTO video_aulas (titulo, url, duracao) VALUES ('Vetores', 'https://youtu.be/0Sc3ALexmjg?feature=shared', 00:10:59');
-INSERT INTO video_aulas (titulo, url, duracao) VALUES ('Física Basica - Em cinco minutos ', 'https://youtu.be/QWuIDvzHxqw?feature=shared', 00:05:02');
-INSERT INTO video_aulas (titulo, url, duracao) VALUES ('Física Basica - Para iniciantes', 'https://youtu.be/0Sc3ALexmjg?feature=shared', 00:10:58');
+INSERT INTO videos (titulo, url, duracao) VALUES ('Velocidade Média', 'https://youtu.be/wlTa_yTElGM?feature=shared', 00:10:45');
+INSERT INTO videos (titulo, url, duracao) VALUES ('Física Basica- Começando do Zero', 'https://youtu.be/G9Uk-eV6ctQ?feature=shared', 00:11:13');
+INSERT INTO videos (titulo, url, duracao) VALUES ('Como entender fisica', 'https://www.youtube.com/live/MHhIOaBesa4?feature=shared', 00:58:29');
+INSERT INTO videos (titulo, url, duracao) VALUES ('Vetores', 'https://youtu.be/0Sc3ALexmjg?feature=shared', 00:10:59');
+INSERT INTO videos (titulo, url, duracao) VALUES ('Física Basica - Em cinco minutos ', 'https://youtu.be/QWuIDvzHxqw?feature=shared', 00:05:02');
+INSERT INTO videos (titulo, url, duracao) VALUES ('Física Basica - Para iniciantes', 'https://youtu.be/0Sc3ALexmjg?feature=shared', 00:10:58');
 
 
 CREATE TABLE noticias (
