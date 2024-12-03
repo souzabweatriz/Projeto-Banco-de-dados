@@ -30,7 +30,7 @@ CREATE TABLE carreiras {
     requisitos TEXT,
     id_estudante INT,
     salario_medio DECIMAL(10,2)
-    FOREIGN KEY (id_estudante) REFERENCES Estudantes(id_estudante)
+    FOREIGN KEY (id_estudante) REFERENCES cadastro_estudantes(id_estudante)
 }
 
 /*Insert's*/
