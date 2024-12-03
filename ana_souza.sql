@@ -1,10 +1,8 @@
 /*Criação do Banco*/
-
 CREATE DATABASE sitefisica;
 \c sitefisica
 
 /*Criação da tabela de Cadastro dos estudantes*/
-
 CREATE TABLE cadastro_estudantes (
     id_estudante SERIAL PRMARY KEY,
     nome VARCHAR(70) NOT NULL,
@@ -22,7 +20,6 @@ VALUES
 ('Caio Gabriel Lacerda Silva', 'caio.g.silva20@aluno.senai.br', 'silva@123'),
 ('Kevin Eziquiel Lima', 'kevin.e.lima@aluno.senai.br', 'lima@123');
 
-SELECT * FROM cadastro_estudantes;
 
 /*Tabela Carreiras*/
 
