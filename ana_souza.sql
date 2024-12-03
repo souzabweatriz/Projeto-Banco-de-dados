@@ -24,3 +24,22 @@ VALUES
 
 SELECT * FROM cadastro_estudantes;
 
+/*Tabela Carreiras*/
+
+CREATE TABLE carreiras {
+    id_carreiras SERIAL PRIMARY KEY,
+    titulo VARCHAR(70) NOT NULL,
+    descricao TEXT,
+    requisitos TEXT,
+    id_estudante INT,
+    salario_medio DECIMAL(10,2)
+    FOREIGN KEY (id_estudante) REFERENCES Estudantes(id_estudante)
+}
+
+/*Insert's*/
+
+INSERT INTO carreiras (titulo, descricao, requisitos, salario_medio, id_estudante)
+VALUES
+('Físico Experimental', 'Profissional que realiza experimentos e investigações no campo da física experimental, envolvendo a coleta de dados e análise de fenômenos físicos.', 'Graduação em Física, conhecimento em técnicas experimentais, habilidades em laboratório e software de análise de dados.', 7500.00, 4),
+('Físico Teórico', 'Profissional que trabalha no desenvolvimento de teorias matemáticas para explicar fenômenos físicos, aplicando princípios da física em modelos matemáticos.',)
+('Engenheiro Físico', 'Profissional que aplica conceitos da física para resolver problemas de engenharia, desenvolvendo tecnologias e produtos baseados em princípios físicos.', 'Graduação em Física ou Engenharia Física, conhecimento em programação, materiais e sistemas mecânicos.', 8000.00, 1);
