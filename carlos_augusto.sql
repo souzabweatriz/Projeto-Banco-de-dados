@@ -25,8 +25,8 @@ INSERT INTO simulados (titulo_simulado, descricao) VALUES
 /*Listar todos os estudantes e os simulados associados*/
 
 SELECT
-    e.nome  AS  estudantes,
-    s.titulo_simulado AS simulado,
+    e.nome  AS  cadastro_estudantes,
+    s.titulo_simulado AS simulados,
     s.descricao
 FROM
     cadastro_estudantes e
