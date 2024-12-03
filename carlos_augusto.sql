@@ -22,4 +22,16 @@ INSERT INTO simulados (titulo_simulado, descricao) VALUES
 ('Física Nuclear', 'Simulado de física que trata dos fenômenos nucleares e suas aplicações.'),
 ('Relatividade', 'Simulado de física sobre as teorias da relatividade.');
 
-SELECT * FROM simulados;
+/*Listar todos os estudantes e os simulados associados*/
+
+SELECT
+    e.nome  AS  estudantes,
+    s.titulo_simulado AS simulado,
+    s.descricao
+FROM
+    cadastro_estudantes e
+LEFT JOIN 
+    simulados e 
+ON 
+    e.id_estudante = s.id_estudante;
+
